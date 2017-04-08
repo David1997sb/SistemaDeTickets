@@ -56,7 +56,6 @@ public class ListaUsuarios extends Usuario{
     public void newUser() {
         ListaUsuario.add(new Usuario(( JOptionPane.showInputDialog("Nombre: ")), JOptionPane.showInputDialog("Apellido: "),id));
         System.out.println("Su ID es: " + id + "\n");
-      
     }
 
     public void printList(int id) {
