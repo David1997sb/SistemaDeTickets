@@ -13,14 +13,14 @@ import javax.swing.JOptionPane;
  *
  * @author Nicol
  */
-public class ListaUsuarios extends Usuario{
+public class ListaUsuarios {
 
-    private List<Usuario> ListaUsuario;
+    public static List<Usuario> ListaUsuario;
    
     private int id = 16835;
 
-    public ListaUsuarios(String Nombre, String Apellido, int ID) {
-        super(Nombre, Apellido, ID);
+    public ListaUsuarios() {
+        
         ListaUsuario=new ArrayList<>();
     }
     

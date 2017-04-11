@@ -30,15 +30,15 @@ public class Admin {
     
     public void llamaUsuarios(){
        
-    ListaUsuarios lista= new ListaUsuarios(null, null, id);
+//    ListaUsuarios lista= new ListaUsuarios(null, null, id);
+//    
     
     
     
     
-    
-    lista.currentUsser();
-    lista.printList(16836);
-   
+//    lista.currentUsser();
+//    lista.printList(16836);
+//   
     
     
     

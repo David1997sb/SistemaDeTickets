@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Elizabeth Cano
  */
-public class Tiquete extends ListaUsuarios {
+public class Tiquete extends Usuario{
     private String DescripcionProblema;
     private String Prioridad;
     private String Reporte;
@@ -28,9 +28,9 @@ public class Tiquete extends ListaUsuarios {
         this.ubicacion = ubicacion;
         this.fechaCreacion = fechaCreacion;
     }
-   
 
-    
+
+
     public String getDescripcionProblema() {
         return DescripcionProblema;
     }
@@ -71,7 +71,6 @@ public class Tiquete extends ListaUsuarios {
         this.ubicacion = ubicacion;
     }
 
-   
     public String getFechaCreacion() {
         return fechaCreacion;
     }
@@ -80,9 +79,12 @@ public class Tiquete extends ListaUsuarios {
         this.fechaCreacion = fechaCreacion;
     }
 
-    
-    
-    
+    @Override
+    public String toString() {
+        return "DescripcionProblema=" + DescripcionProblema + ", Prioridad=" + Prioridad + ", Reporte=" + Reporte + ", tecnologiaAfectada=" + tecnologiaAfectada + ", ubicacion=" + ubicacion + ", fechaCreacion=" + fechaCreacion + '}';
+    }
+
+   
 
     
    
