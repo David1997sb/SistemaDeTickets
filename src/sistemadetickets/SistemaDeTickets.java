@@ -20,8 +20,8 @@ public class SistemaDeTickets {
      */
     public static void main(String[] args) {
 //        Admin x=new Admin();
-//       ListaUsuarios listaUsuarios = new ListaUsuarios();
-//       listaUsuarios.currentUsser();
+       ListaUsuarios listaUsuarios = new ListaUsuarios();
+       listaUsuarios.currentUsser();
 //       System.out.println(listaUsuarios.getListaUsuario());
 //        ListaUsuarios lists = new ListaUsuarios(null,null,0);
 //        x.llamaUsuarios();

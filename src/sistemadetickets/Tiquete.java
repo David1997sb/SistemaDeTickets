@@ -81,7 +81,7 @@ public class Tiquete extends Usuario{
 
     @Override
     public String toString() {
-        return "DescripcionProblema=" + DescripcionProblema + ", Prioridad=" + Prioridad + ", Reporte=" + Reporte + ", tecnologiaAfectada=" + tecnologiaAfectada + ", ubicacion=" + ubicacion + ", fechaCreacion=" + fechaCreacion + '}';
+        return "DescripcionProblema=" + DescripcionProblema + ", Prioridad=" + Prioridad + ", Reporte=" + Reporte + ", tecnologiaAfectada=" + tecnologiaAfectada + ", ubicacion=" + ubicacion + ", fechaCreacion=" + fechaCreacion + super.getNombre()+super.getApellido()+super.getID();
     }
 
    

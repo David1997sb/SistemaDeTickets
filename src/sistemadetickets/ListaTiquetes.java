@@ -101,19 +101,18 @@ public class ListaTiquetes extends Tiquete{
 
      public void CreaTiquetes(int id) {
         
+        
+         for (Usuario p:ListaUsuarios.ListaUsuario) {
+             
+             if (p.getID()== id) { 
         super.setDescripcionProblema(JOptionPane.showInputDialog("Ingrese la descripcion"));
         super.setReporte(reporte().getMecanismo());
         super.setTecnologiaAfectada(tecnologiaAfectada().getTecnologia());
         super.setPrioridad(prioridadTiquete().getPrioridad());
         super.setFechaCreacion(JOptionPane.showInputDialog("Ingrese la fecha"));
         super.setUbicacion(JOptionPane.showInputDialog("Ingrese la Ubicacion"));
-        listaTiquete.add(new Tiquete(super.getDescripcionDelProblema(), super.getReporte(), super.getTecnologiaAfectada(),  super.getPrioridad(), super.getFechaCreacion(), super.getUbicacion(), super.getNombre(), super.getApellido(), super.getID()));
-          
-         for (Usuario p:ListaUsuarios.ListaUsuario) {
-             
-             if (p.getID()== id) { 
-                
-              listaTiquete.add(new Tiquete(super.getDescripcionProblema(), super.getPrioridad(), super.getReporte(), super.getTecnologiaAfectada(), super.getUbicacion(), super.getFechaCreacion(), p.getNombre(), p.getApellido(), p.getID()));
+        
+       listaTiquete.add(new Tiquete(super.getDescripcionProblema(), super.getPrioridad(), super.getReporte(), super.getTecnologiaAfectada(), super.getUbicacion(), super.getFechaCreacion(), p.getNombre(), p.getApellido(), p.getID()));
              }
              
          }
@@ -132,9 +131,9 @@ public class ListaTiquetes extends Tiquete{
       
       
       public void CreaTiquete(int id) {
-        for (Usuario p : listaTiquete) {
+        for (Usuario p : ListaUsuarios.ListaUsuario) {
             if (p.getID() == id) {
-                listaTiquete.add(new Tiquete(JOptionPane.showInputDialog("Ingrese la descripción del problema:"), prioridadTiquete().getPrioridad(), reporte().getMecanismo(), tecnologiaAfectada().getTecnologia(), JOptionPane.showInputDialog("Ingrese su Ubicación"), JOptionPane.showInputDialog("Ingrese la fecha de creacion del tiquete"), p.getNombre(), p.getApellido(), p.getID()));
+                System.out.println(p.getNombre());
             }
         }
     }
