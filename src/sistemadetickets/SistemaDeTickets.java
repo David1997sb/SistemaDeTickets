@@ -27,10 +27,10 @@ public class SistemaDeTickets {
 //        x.llamaUsuarios();
 //ListaTiquete listaTiquete = new ListaTiquete();aUsuarios = new ListaUsuarios(null,null,0);
 //        x.llamaUsuarios();
-ListaTiquete listaTiquete = new ListaTiquete(null,null, null, null, null, null, null, null, 0);
+ListaTiquetes listaTiquete = new ListaTiquetes(null,null, null, null, null, null, null, null, 0);
 //listaTiquete.fillList();
 listaTiquete.CreaTiquetes(16835);
-        System.out.println(listaTiquete.getListaTiquetes());
+      System.out.println(listaTiquete.getListaTiquetes());
 //        
 //        ListaTiquete listaTiquete = new ListaTiquete();
 ////listaTiquete.fillList();

@@ -19,16 +19,14 @@ public class Admin {
         Usuario Users2 =new Usuario("Elizabeth", "Cano", id++);
         Usuario Users3 =new Usuario("Fabian", "Hernandez", id++);
         Usuario Users4 =new Usuario("David", "Salas", id++);
-        
-        
 
     public Admin() {
         list=new ArrayList<>();
         
     }
     
-    
     public void llamaUsuarios(){
+
        
 //    ListaUsuarios lista= new ListaUsuarios(null, null, id);
 //    
@@ -39,23 +37,12 @@ public class Admin {
 //    lista.currentUsser();
 //    lista.printList(16836);
 //   
-    
-    
-    
-    
-    
-    
-    
-    
+  
+  
+    ListaUsuarios lista= new ListaUsuarios();
+    lista.currentUsser();
+    lista.printList(16836);
     }
     public void imprimeLista(){
-    
-    
-    
     }
-    
-        
-        
-
-   
 }
